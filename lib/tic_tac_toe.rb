@@ -69,7 +69,13 @@ def turn_count
     end
 end
 
- 
+ def won?
+   WIN_COMBINATIONS.detect do |combo|
+      @board[combo[0]] == @board[combo[1]] &&
+      @board[combo[2]] == @board[combo[2]] &&
+      position_taken?(combo[0])
+    end 
+  end
   
  
   def valid_move?(index)
