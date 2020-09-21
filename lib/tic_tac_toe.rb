@@ -89,39 +89,5 @@ end
     !won? && full?
   end
   
-  def position_taken?(index)
-    !(@board[index].nil? || @board[index] == " ")
-  end
-
   
-  def move(position, char)
-    @board[position] = char
-  end
-
-  
-  
- 
-  def over?
-    won? || draw?
-  end
-
-  
-
-  
- 
-
-  
-  
-
-
-
-  def winner
-    if won?
-      @board[won?[0]] == "X" ? "X" : "O"
-    else
-      nil
-    end
-  end
-
-end
 
