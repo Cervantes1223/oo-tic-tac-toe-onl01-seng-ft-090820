@@ -85,7 +85,9 @@ end
     index.between?(0,8) && !position_taken?(index)
   end
 
-
+  def draw?
+    !won? && full?
+  end
   
   def position_taken?(index)
     !(@board[index].nil? || @board[index] == " ")
