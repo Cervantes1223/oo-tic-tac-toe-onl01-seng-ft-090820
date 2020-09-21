@@ -1,3 +1,11 @@
-#!/usr/bin/env ruby
-require 'pry'
-require_relative '../lib/tic_tac_toe.rb'
+Set up the game initially [TicTacToe]
+    Create a game board [Board]
+    Create a couple players [Player]
+Start the game loop [TicTacToe]
+    Render the board [Board]
+    Ask for and validate the current player's coordinates [Player]
+    If the game should end [TicTacToe]
+        Display the proper victory / draw message
+        Stop looping
+    Else
+        Switch to the next player and keep looping [TicTacToe]
