@@ -77,6 +77,7 @@ end
     end 
   end
   
+  
  
   def valid_move?(index)
     index.between?(0,8) && !position_taken?(index)
@@ -109,9 +110,7 @@ end
     !won? && full?
   end
 
-  def full?
-    !@board.any?{|x| x == "" || x == " "}
-  end
+
 
   def winner
     if won?
